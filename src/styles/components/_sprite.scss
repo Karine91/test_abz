@@ -1,0 +1,39 @@
+.icon {
+    background-image: url('/images/sprites/sprite.png');
+}
+
+    .icon--ask {
+        background-position: 0px 0px;
+        width: 24px;
+        height: 24px;
+    }
+    .icon--chat {
+        background-position: 0px -24px;
+        width: 26px;
+        height: 22px;
+    }
+    .icon--companies {
+        background-position: 0px -46px;
+        width: 21px;
+        height: 24px;
+    }
+    .icon--feed {
+        background-position: -48px 0px;
+        width: 24px;
+        height: 23px;
+    }
+    .icon--notifications {
+        background-position: -24px 0px;
+        width: 24px;
+        height: 24px;
+    }
+    .icon--search {
+        background-position: -48px -23px;
+        width: 16px;
+        height: 16px;
+    }
+    .icon--services {
+        background-position: -21px -46px;
+        width: 19px;
+        height: 24px;
+    }

@@ -1,0 +1,12 @@
+.advertisement {
+    &__sign {
+        color: #d3d3d3;
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 5px;
+    }
+}

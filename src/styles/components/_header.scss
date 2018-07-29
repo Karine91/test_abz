@@ -1,0 +1,14 @@
+.header{
+    background: $green;
+    padding: $s-size 0;
+    border-bottom: 2px solid $dark-green;
+    
+    &__middle-block {
+        display: flex;
+        align-items: center;
+
+        > div + div {
+            margin-left: 30px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.container {
+    width: 970px;
+    padding: 0 $s-size;
+    @include atLarge {
+        width: 1440px;
+    }
+    margin: 0 auto;
+
+    &--tb-padding {
+        padding-top: $s-size;
+        padding-bottom: $s-size;
+    }
+}

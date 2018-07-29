@@ -1,0 +1,29 @@
+.search {
+    position: relative;
+    flex-grow: 1;
+    max-width: 435px;
+    display: inline-flex;
+
+    .icon {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        margin: auto;
+    }
+
+    &__input {
+        border-radius: 2px;
+        border: none;
+        width: 100%;
+        background-color: rgba(0, 0,0, .15);
+        padding: 10px 10px 10px 40px;
+        font-size: $s-size;
+        color: white;
+
+        @include placeholder {
+            color: rgba(white, .5);
+        }
+    }
+}

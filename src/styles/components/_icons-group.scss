@@ -1,0 +1,8 @@
+.icons-group {
+    display: inline-flex;
+    align-items: center;
+
+    .icon + .icon {
+        margin-left: 20px;
+    }
+}

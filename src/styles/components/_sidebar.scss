@@ -1,0 +1,38 @@
+.sidebar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        border-bottom: 1px solid $lightgray;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        min-height: 50px;
+        padding: 10px 0;
+        transition: background .3s ease;
+        word-break: break-all;
+
+        &:hover {
+            background: $off-white;
+        }
+    }
+
+    &__icon {
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        margin-right: $m-size;
+        
+        .icon {
+            display: block;
+            
+        }
+    }
+
+    &__title {
+        color: $text-gray;
+    }
+}
