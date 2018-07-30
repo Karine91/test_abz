@@ -5,12 +5,12 @@ export const Header = ({ startLogout }) => (
     <header className="header">
         <div className="container">
             <div className="row row--centered">
-                <div className="row__col row__col-2">
+                <div className="row__col row__col--2 row__col--width-fixed">
                     <a className="logo" href="/">
                         <img className="logo__image" sizes="130px" srcSet="/images/logo.png 130w, /images/logo-hi-dpi.png 260w" alt="Denteez"/>
                     </a>
                 </div>
-                <div className="row__col row__col-7">
+                <div className="row__col row__col--7 row__col--width-fluid">
                     <div className="header__middle-block">
                         <div className="search">
                             <span className="icon icon--search"></span>
@@ -22,7 +22,7 @@ export const Header = ({ startLogout }) => (
                         </div>
                     </div>
                 </div>
-                <div className="row__col row__col-3">
+                <div className="row__col row__col--3 row__col--width-fixed">
                     <div className="user-info">
                         <div className="user-info__pic-holder">
                             <img className="user-info__image" src="/images/user-pic.jpg" alt=""/>

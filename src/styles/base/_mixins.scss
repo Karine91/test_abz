@@ -4,6 +4,12 @@
     }
 }
 
+@mixin atWidth($width) {
+    @media (min-width: $width) {
+        @content;
+    }
+}
+
 @mixin fontFace($family, $src, $style: normal, $weight: normal) {
 	@font-face {
 		font-family: $family;

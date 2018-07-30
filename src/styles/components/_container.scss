@@ -1,13 +1,27 @@
 .container {
-    width: 970px;
+    min-width: 970px;
+    max-width: 1440px;
     padding: 0 $s-size;
-    @include atLarge {
-        width: 1440px;
-    }
     margin: 0 auto;
+
+    &--fluid {
+        width: 100%;
+        min-width: auto;
+        max-width: none;
+        padding: $s-size 1.3rem $s-size 1.4rem;
+    }
 
     &--tb-padding {
         padding-top: $s-size;
         padding-bottom: $s-size;
+    }
+
+    &--bordered {
+        border: 1px solid  $lightgray;
+        border-radius: 4px;
+    }
+
+    &--no-margin {
+        margin: 0;
     }
 }

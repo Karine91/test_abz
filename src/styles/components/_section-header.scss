@@ -1,0 +1,13 @@
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__title {
+        color: $dark-blue;
+        font-size: $font-size-xlarge;
+        font-weight: 400;
+        margin: 0 0 2rem;
+        line-height: 1.2;
+    }
+}

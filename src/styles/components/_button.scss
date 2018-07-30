@@ -1,0 +1,13 @@
+.button {
+    background: $green;
+    border: none;
+    color: white;
+    font-size: $font-size-small;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    transition: background .3s ease;
+
+    &:hover {
+        background: darken($green, 10%)
+    }
+}

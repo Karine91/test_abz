@@ -30,3 +30,9 @@ button:disabled {
 a {
     text-decoration: none;
 }
+
+.text-one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

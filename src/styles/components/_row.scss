@@ -16,23 +16,31 @@
         padding: 0 $s-size;
     }
 
-    &__col-2 {
+    &__col--2 {
         width: 16.666%;
     }
 
-    &__col-3 {
+    &__col--3 {
         width: 25%;
     }
 
-    &__col-6 {
+    &__col--6 {
         width: 50%;
     }
 
-    &__col-7 {
+    &__col--7 {
         width: 58.333%;
     }
 
     &__col--width-fixed {
         max-width: 243px;
+    }
+
+    &__col--width-fluid{
+        flex-grow: 1;
+    }
+
+    &__col--no-padding {
+        padding: 0;
     }
 }
