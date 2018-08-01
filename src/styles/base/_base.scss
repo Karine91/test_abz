@@ -1,39 +1,41 @@
-@include fontFace('ProximaNova-Regular', '../fonts/ProximaNova-Regular');
-@include fontFace('ProximaNova-Light', '../fonts/ProximaNova-Light');
+@include fontFace("ProximaNova-Regular", "../fonts/ProximaNova-Regular");
+@include fontFace("ProximaNova-Light", "../fonts/ProximaNova-Light");
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'ProximaNova-Regular', sans-serif;
-    font-size: $font-size-medium;
-    color: $gray;
-    line-height: 1.6;
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-size: $font-size-medium;
+  color: $gray;
+  line-height: 1.6;
 }
 
 button {
-   cursor: pointer;
+  cursor: pointer;
 }
 
 button:disabled {
-    cursor: default;
+  cursor: default;
 }
 
 .is-active {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .text-one-line {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
