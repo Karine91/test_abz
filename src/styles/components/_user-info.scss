@@ -1,22 +1,24 @@
 .user-info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    &__pic-holder {
-        border-radius: 4px;
-        overflow: hidden;
-        margin-right: 10px;
-        flex-shrink: 0;
-    }
+  &__pic-holder {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-right: 10px;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+  }
 
-    &__image {
-        display: block;
-        width: 100%;
-    }
+  &__image {
+    display: block;
+    width: 100%;
+  }
 
-    &__name {
-        color: white;
-        font-size: $font-size-medium;
-        word-break: break-all;
-    }
+  &__name {
+    color: white;
+    font-size: $font-size-medium;
+    word-break: break-all;
+  }
 }

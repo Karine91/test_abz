@@ -1,28 +1,29 @@
 .search {
-    position: relative;
-    flex-grow: 1;
-    display: inline-flex;
+  position: relative;
+  flex-grow: 1;
+  display: inline-flex;
 
-    .icon {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 10px;
-        margin: auto;
+  .icon {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+  }
+
+  &__input {
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5px 10px 5px 36px;
+    font-size: $s-size;
+    color: white;
+    line-height: 1.6;
+
+    @include placeholder {
+      color: rgba(white, 0.5);
     }
-
-    &__input {
-        border-radius: 2px;
-        border: none;
-        width: 100%;
-        background-color: rgba(0, 0,0, .15);
-        padding: 10px 10px 10px 40px;
-        font-size: $s-size;
-        color: white;
-
-        @include placeholder {
-            color: rgba(white, .5);
-        }
-    }
+  }
 }

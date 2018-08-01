@@ -1,27 +1,31 @@
 .container {
-    min-width: 970px;
-    max-width: 1440px;
-    padding: 0 $s-size;
-    margin: 0 auto;
+  min-width: 970px;
+  max-width: 1440px;
+  padding: 0 $s-size;
+  margin: 0 auto;
 
-    &--fluid {
-        width: 100%;
-        min-width: auto;
-        max-width: none;
-        padding: $s-size 1.3rem $s-size 1.4rem;
-    }
+  &--fluid {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+    padding: $s-size 1.3rem $s-size 1.4rem;
+  }
 
-    &--tb-padding {
-        padding-top: $s-size;
-        padding-bottom: $s-size;
-    }
+  &--tb-padding {
+    padding-top: $s-size;
+    padding-bottom: $s-size;
+  }
 
-    &--bordered {
-        border: 1px solid  $lightgray;
-        border-radius: 4px;
-    }
+  &--bordered {
+    border: 1px solid $lightgray;
+    border-radius: 4px;
+  }
 
-    &--no-margin {
-        margin: 0;
-    }
+  &--no-margin {
+    margin: 0;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
 }

@@ -1,8 +1,18 @@
 .icons-group {
-    display: inline-flex;
-    align-items: center;
+  display: inline-flex;
+  align-items: center;
 
-    .icon + .icon {
-        margin-left: 20px;
+  .icon {
+    position: relative;
+    top: 2px;
+
+    &--notifications {
+      left: -2px;
+      top: 1px;
     }
+  }
+
+  .icon + .icon {
+    margin-left: 23px;
+  }
 }

@@ -1,27 +1,26 @@
 .footer {
+  &__copyright {
+    margin: 1.6rem 0;
+    color: #b7bfcd;
+    font-size: $font-size-xsmall;
+    line-height: 1;
+  }
 
-    &__copyright {
-        margin: 20px 0;
-        color: #b7bfcd;
-        font-size: $font-size-xsmall;
-        line-height: 1;
+  &__nav {
+    display: flex;
+  }
+
+  &__link {
+    @extend .footer__copyright;
+    display: block;
+    margin: 0;
+
+    &:hover {
+      text-decoration: underline;
     }
+  }
 
-    &__nav {
-        display: flex;
-    }
-
-    &__link {
-        @extend .footer__copyright;
-        display: block;
-        margin: 0;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    &__link + &__link {
-        margin-left: 20px;
-    }
+  &__link + &__link {
+    margin-left: 20px;
+  }
 }

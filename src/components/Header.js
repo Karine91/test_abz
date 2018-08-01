@@ -1,14 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Logo from './Logo';
 
 export const Header = ({ startLogout }) => (
     <header className="header">
         <div className="container">
             <div className="row row--centered">
                 <div className="row__col row__col--2 row__col--width-fixed">
-                    <a className="logo" href="/">
-                        <img className="logo__image" sizes="130px" srcSet="/images/logo.png 130w, /images/logo-hi-dpi.png 260w" alt="Denteez"/>
-                    </a>
+                    <Logo />
                 </div>
                 <div className="row__col row__col--7 row__col--width-fluid">
                     <div className="header__middle-block">
@@ -25,7 +24,7 @@ export const Header = ({ startLogout }) => (
                 <div className="row__col row__col--3 row__col--width-fixed">
                     <div className="user-info">
                         <div className="user-info__pic-holder">
-                            <img className="user-info__image" src="/images/user-pic.jpg" alt=""/>
+                            <img className="user-info__image" src="/images/user-pic.jpg" alt="" />
                         </div>
                         <div className="user-info__name">
                             Maximillian Beekeeper
@@ -38,7 +37,7 @@ export const Header = ({ startLogout }) => (
 );
 
 const mapDispatchedToProps = (dispatch) => ({
-    
+
 });
 
 export default connect(undefined, mapDispatchedToProps)(Header);
