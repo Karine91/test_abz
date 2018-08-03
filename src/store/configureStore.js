@@ -5,7 +5,7 @@ import friendsReducer from "../reducers/friends";
 import productsReducer from "../reducers/products";
 import servicesReducer from "../reducers/services";
 import modalStateReducer from "../reducers/modalState";
-import enquiryTypeListReducer from "../reducers/enquiryTypeList";
+import enquiryTypeReducer from "../reducers/enquiryTypeList";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -17,7 +17,7 @@ export default () => {
       products: productsReducer,
       services: servicesReducer,
       modalState: modalStateReducer,
-      enquiryTypeList: enquiryTypeListReducer
+      enquiryTypeList: enquiryTypeReducer
     }),
     composeEnhancers(applyMiddleware(thunk))
   );

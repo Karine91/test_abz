@@ -1,0 +1,39 @@
+.close-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  background: linear-gradient(
+    #5ba3c3 0,
+    #5ba3c3 50%,
+    #65bade 51%,
+    #65bade 100%
+  );
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 17px;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    transform-origin: 0 0;
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+  &:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+  &:hover {
+    background: linear-gradient(
+      #bd4b4c 0,
+      #bd4b4c 50%,
+      #d95252 51%,
+      #d95252 100%
+    );
+  }
+}

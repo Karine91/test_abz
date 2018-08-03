@@ -1,4 +1,16 @@
 .footer {
+  &--bordered {
+    border-top: 1px solid #e0e2e6;
+  }
+
+  &__flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 12px;
+  }
+
   &__copyright {
     margin: 1.6rem 0;
     color: #b7bfcd;
@@ -22,5 +34,9 @@
 
   &__link + &__link {
     margin-left: 20px;
+  }
+
+  &__flex-wrapper &__link + &__link {
+    margin-left: 26px;
   }
 }

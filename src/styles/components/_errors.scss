@@ -1,0 +1,10 @@
+.error-message {
+  color: $red;
+  font-size: $font-size-xsmall;
+  text-align: center;
+}
+
+.error-input,
+.error-input:focus {
+  border-color: $red;
+}

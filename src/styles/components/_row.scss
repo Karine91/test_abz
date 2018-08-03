@@ -1,46 +1,54 @@
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -$s-size;
-    margin-right: -$s-size;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -$s-size;
+  margin-right: -$s-size;
 
-    &--centered {
-        align-items: center;
-    }
+  &--centered {
+    align-items: center;
+  }
 
-    &--column {
-        flex-direction: column;
-    }
+  &--column {
+    flex-direction: column;
+  }
 
-    &__col {
-        padding: 0 $s-size;
-    }
+  &__col {
+    padding: 0 $s-size;
+  }
 
-    &__col--2 {
-        width: 16.666%;
-    }
+  &__col--2 {
+    width: 16.666%;
+  }
 
-    &__col--3 {
-        width: 25%;
-    }
+  &__col--3 {
+    width: 25%;
+  }
 
-    &__col--6 {
-        width: 50%;
-    }
+  &__col--6 {
+    width: 50%;
+  }
 
-    &__col--7 {
-        width: 58.333%;
-    }
+  &__col--7 {
+    width: 58.333%;
+  }
 
-    &__col--width-fixed {
-        max-width: 243px;
-    }
+  &__col--width-fixed {
+    max-width: 243px;
+  }
 
-    &__col--width-fluid{
-        flex-grow: 1;
-    }
+  &__col--width-fluid {
+    flex-grow: 1;
+  }
 
-    &__col--no-padding {
-        padding: 0;
-    }
+  &__col--no-padding {
+    padding: 0;
+  }
+
+  &__col--r-padding-large {
+    padding-right: $l-size;
+  }
+
+  &__col--l-padding-large {
+    padding-left: $l-size;
+  }
 }

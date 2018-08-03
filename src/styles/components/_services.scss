@@ -24,7 +24,7 @@
       }
     }
 
-    @include atWidth(1146px) {
+    @include atWidth(1120px) {
       &:nth-child(n) {
         margin-right: 1.8rem;
       }
@@ -70,7 +70,7 @@
   }
 
   &__icon {
-    max-width: 100%;
+    width: 100%;
   }
 
   &__title {

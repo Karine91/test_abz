@@ -1,12 +1,10 @@
 .container {
-  min-width: 970px;
   max-width: 1440px;
   padding: 0 $s-size;
   margin: 0 auto;
 
   &--fluid {
     width: 100%;
-    min-width: auto;
     max-width: none;
     padding: $s-size 1.3rem $s-size 1.4rem;
   }

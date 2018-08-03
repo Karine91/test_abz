@@ -1,0 +1,17 @@
+.section {
+  @extend .container;
+  padding: 0 8rem;
+
+  &__header {
+    padding: 9.5rem 0 4rem;
+    text-align: center;
+  }
+
+  &__content {
+    padding-bottom: 11rem;
+    p {
+      margin: 0;
+      line-height: 1.45;
+    }
+  }
+}

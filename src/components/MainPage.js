@@ -6,7 +6,7 @@ import Advertisement from "./Advertisement";
 import InfoBlock from "./InfoBlock";
 import Footer from "./Footer";
 import ServicesList from "./ServicesList";
-import ErrorModal from "./ErrorModal";
+import MessageModal from "./MessageModal";
 import { setModalState } from "../actions/modalState";
 
 const MainPage = props => (
@@ -23,12 +23,19 @@ const MainPage = props => (
               type="companies"
               contentData={props.companies}
             />
-            <Footer />
+            <Footer>
+              <a href="#" className="footer__link">
+                Terms of use
+              </a>
+              <a href="#" className="footer__link">
+                Privacy Policy
+              </a>
+            </Footer>
           </div>
         </div>
         <div className="row__col row__col--6 row__col--column row__col--no-padding row__col--width-fluid">
-          <div className="section-header">
-            <h1 className="section-header__title">Service Directory</h1>
+          <div className="page-header">
+            <h1 className="heading-medium">Service Directory</h1>
             <button className="button">Add New Service</button>
           </div>
           <ServicesList />
@@ -50,12 +57,13 @@ const MainPage = props => (
         </div>
       </div>
     </div>
-    <ErrorModal
+    <MessageModal
       modalIsOpen={props.modalState.isOpen}
       handleCloseModal={() => {
         props.dispatch(setModalState({ isOpen: false }));
       }}
-      errorMessage={props.modalState.errMessage}
+      title={props.modalState.title}
+      message={props.modalState.message}
     />
   </div>
 );

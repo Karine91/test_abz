@@ -1,0 +1,126 @@
+.section-form {
+  background: url("/images/contact-bg-main.jpg");
+}
+
+.form {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+
+  &__content {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid $lightgray;
+    margin-bottom: 2rem;
+    padding: 1.4rem 2rem 1.8rem;
+  }
+
+  &__row {
+    display: flex;
+
+    &--space-between {
+      justify-content: space-between;
+    }
+  }
+
+  &__message {
+    color: #c1c1c1;
+    margin-bottom: 0.9rem;
+  }
+
+  &__input-group {
+    margin-bottom: 2rem;
+    flex-grow: 1;
+
+    &--r-margin {
+      margin-right: 3rem;
+    }
+  }
+
+  &__label {
+    color: $dark-blue;
+    display: block;
+    margin-bottom: 0.6rem;
+    line-height: 1;
+    margin-left: -2px;
+  }
+
+  &__input {
+    border: 1px solid #c8cdd5;
+    border-radius: 4px;
+    width: 100%;
+    padding: 1.6rem;
+    color: #010101;
+
+    @include placeholder {
+      color: #7c8695;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $gray;
+      box-shadow: 0 0 20px $lightgray;
+    }
+  }
+
+  &__textarea {
+    @extend .form__input;
+    resize: none;
+    height: 150px;
+    display: block;
+  }
+
+  &__select {
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  &__photo {
+    @extend .form__input;
+    padding: 1.6rem;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f7f7f7;
+    cursor: pointer;
+
+    input {
+      visibility: hidden;
+      height: 0;
+    }
+  }
+
+  &__photo-label {
+    color: #7c8695;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+
+  &__photo-info {
+    color: #c2c2c4;
+    font-size: $font-size-xsmall;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+.preview-photo {
+  @extend .form__input;
+  width: 130px;
+  height: 130px;
+  padding: 0.5rem;
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+  }
+}

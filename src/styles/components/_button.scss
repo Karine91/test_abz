@@ -2,6 +2,7 @@
   background: $green;
   border: none;
   color: white;
+  text-align: center;
   font-size: $font-size-small;
   padding: 0.7rem 1.9rem;
   border-radius: 5px;
@@ -9,5 +10,12 @@
 
   &:hover {
     background: darken($green, 10%);
+  }
+
+  &--big {
+    width: 100%;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    font-size: $font-size-medium;
   }
 }

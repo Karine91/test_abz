@@ -1,5 +1,9 @@
 //SET_MODAL_STATE
-export const setModalState = (modalState) => ({
-    type: 'SET_MODAL_STATE',
-    modalState
+export const setModalState = ({
+  isOpen,
+  message = "Houston, we have a problem!",
+  title = "Error"
+}) => ({
+  type: "SET_MODAL_STATE",
+  modalState: { isOpen, message, title }
 });
