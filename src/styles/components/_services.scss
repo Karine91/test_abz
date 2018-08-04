@@ -38,7 +38,7 @@
       }
     }
 
-    @include atWidth(1304px) {
+    @include atWidth(1285px) {
       &:nth-child(n) {
         margin-right: 1.8rem;
       }

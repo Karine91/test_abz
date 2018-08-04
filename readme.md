@@ -1,1 +1,6 @@
-# Boilerplate react app
+# Test assignment
+
+Run:
+
+1.  npm i
+2.  npm start

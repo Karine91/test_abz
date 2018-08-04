@@ -1,15 +1,13 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = env => {
   const isProduction = env === "production";
   return {
-    entry: {
-      bundle: ["babel-polyfill", "./src/app.js"],
-      vendor: "./src/vendor.js"
-    },
+    entry: ["babel-polyfill", "./src/app.js"],
     output: {
       path: path.join(__dirname, "public", "dist"),
-      filename: "[name].js"
+      filename: "bundle.js"
     },
     module: {
       rules: [
@@ -20,6 +18,13 @@ module.exports = env => {
         }
       ]
     },
-    devtool: isProduction ? "source-map" : "inline-source-map"
+    devtool: isProduction ? "source-map" : "inline-source-map",
+    plugins: [
+      new webpack.DefinePlugin({
+        "process.env.NODE_ENV": isProduction
+          ? JSON.stringify("production")
+          : JSON.stringify("development")
+      })
+    ]
   };
 };

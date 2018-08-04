@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import "./axious/config";
+import "picturefill";
 
 const store = configureStore();
 
