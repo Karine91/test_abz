@@ -10,7 +10,7 @@ class ServiceList extends React.Component {
       this.props.dispatch(
         setModalState({
           isOpen: true,
-          message: err.error && err.error.description,
+          message: err.response && err.response.data.error.description,
           title: "Error!"
         })
       );
