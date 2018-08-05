@@ -24,9 +24,11 @@ export const Header = ({ startLogout }) => (
               <a href="#" className="icon icon--chat" />
               <a href="#" className="icon icon--notifications" />
             </div>
-            <Link to="/contacts" className="button button--bordered">
-              Contacts
-            </Link>
+            <div className="contacts">
+              <Link to="/contacts" className="button button--bordered">
+                Contacts
+              </Link>
+            </div>
           </div>
         </div>
 
