@@ -5,7 +5,8 @@
   "author": "Karine Giulumian",
   "license": "MIT",
   "scripts": {
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "gulp build"
   },
   "dependencies": {
     "axios": "^0.18.0",
