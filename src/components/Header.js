@@ -26,7 +26,7 @@ export const Header = ({ startLogout }) => (
             </div>
           </div>
         </div>
-        <Link to="/contacts" className="button">
+        <Link to="/contacts" className="button button--bordered">
           Contacts
         </Link>
         <div className="row__col row__col--3 row__col--width-fixed">
