@@ -68,7 +68,7 @@ class ContactForm extends React.Component {
       this.props.dispatch(
         setModalState({
           isOpen: true,
-          message: err.error ? err.error.description : err.toString()
+          message: err.response && err.response.data.error.description
         })
       );
     });
@@ -380,7 +380,7 @@ class ContactForm extends React.Component {
             this.props.dispatch(
               setModalState({
                 isOpen: true,
-                message: err.error ? err.error.description : err.toString(),
+                message: err.response && err.response.data.error.description,
                 title: "Error!"
               })
             );

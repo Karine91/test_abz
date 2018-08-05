@@ -7,10 +7,11 @@ import { setModalState } from "../actions/modalState";
 class ServiceList extends React.Component {
   componentDidMount() {
     this.props.dispatch(startSetServices()).catch(err => {
+      console.log(err.response);
       this.props.dispatch(
         setModalState({
           isOpen: true,
-          message: err.error && err.error.description,
+          message: err.response && err.response.data.error.description,
           title: "Error!"
         })
       );
