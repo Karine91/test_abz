@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import Logo from "./Logo";
 
 export const Header = ({ startLogout }) => (
@@ -25,6 +26,9 @@ export const Header = ({ startLogout }) => (
             </div>
           </div>
         </div>
+        <Link to="/contacts" className="button">
+          Contacts
+        </Link>
         <div className="row__col row__col--3 row__col--width-fixed">
           <div className="user-info">
             <div className="user-info__pic-holder">
